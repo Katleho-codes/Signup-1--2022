@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&display=swap");
 *,
 *::before,
 *::after {
@@ -13,6 +13,7 @@ body {
   height: 100vh;
   overflow-x: hidden;
   overflow-y: hidden;
+  background-color: #f2f2f2;
 }
 
 .container {
@@ -62,6 +63,7 @@ body {
 }
 
 .col-1 {
+  background-color: #ffffff;
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
@@ -121,7 +123,7 @@ body {
 }
 
 .col-1 .p-2 {
-  text-align: #080c25;
+  text-align: center;
 }
 
 .col-1 .p-2 a {
@@ -167,7 +169,7 @@ body {
   margin: 0.5rem auto;
 }
 
-.col-2 form input[type="text"]:focus {
+.col-2 form input[type="email"]:focus {
   border: 3px solid #a6b2ec;
 }
 
@@ -184,7 +186,7 @@ body {
   border-radius: 4px;
   outline: 0;
   cursor: pointer;
-  border: 3px solid #3071e7;
+  border: 3px solid #a6b2ec;
 }
 
 .col-2 form input[type="submit"]:hover {
@@ -192,34 +194,8 @@ body {
   border: 3px solid #3071e7;
 }
 
-.col-2 p {
-  text-align: center;
-  font-weight: 600;
-}
-
-.col-2 .p-1 {
-  color: #161e35;
-}
-
-.col-2 .p-2 {
-  text-align: #080c25;
-}
-
-.col-2 .p-2 a {
-  text-decoration: none;
-  color: #080c25;
-  font-weight: 600;
-}
-
-.col-2 .p-2 a:hover {
-  color: #3071e7;
-}
-
 @media (min-width: 800px) {
   .columns {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -258,7 +234,8 @@ body {
     outline: 0;
     margin: 1rem auto;
   }
-  .col-1 form input[type="text"]:focus {
+  .col-1 form input[type="text"]:focus,
+  .col-1 form input[type="password"]:focus {
     border: 3px solid #a6b2ec;
   }
   .col-1 form input[type="submit"] {
@@ -275,7 +252,7 @@ body {
     outline: 0;
     cursor: pointer;
     font-size: medium;
-    border: 2px solid #161e35;
+    border: 3px solid #161e35;
   }
   .col-1 form input[type="submit"]:hover {
     background-color: #3071e7;
