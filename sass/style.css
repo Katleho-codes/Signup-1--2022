@@ -1,0 +1,316 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700;800;900&display=swap");
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Mulish", sans-serif;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.columns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 2rem auto;
+  height: 100%;
+  max-width: 100%;
+  border: #080c25 2px solid;
+  border-radius: 10px;
+}
+
+.col {
+  padding: 0 20px;
+  width: 100%;
+}
+
+::-webkit-input-placeholder {
+  font-weight: 500;
+  color: #161e35;
+}
+
+:-ms-input-placeholder {
+  font-weight: 500;
+  color: #161e35;
+}
+
+::-ms-input-placeholder {
+  font-weight: 500;
+  color: #161e35;
+}
+
+::placeholder {
+  font-weight: 500;
+  color: #161e35;
+}
+
+.col-1 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.col-1 h1 {
+  font-size: x-large;
+  font-weight: 600;
+  color: #080c25;
+  text-align: center;
+}
+
+.col-1 form input[type="text"],
+.col-1 form input[type="password"] {
+  width: 100%;
+  padding: 12px 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 3px solid #080c25;
+  border-radius: 4px;
+  outline: 0;
+  margin: 1rem auto;
+}
+
+.col-1 form input[type="text"]:focus,
+.col-1 form input[type="password"]:focus {
+  border: 3px solid #a6b2ec;
+}
+
+.col-1 form input[type="submit"] {
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+  background-color: #161e35;
+  color: #ffffff;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 1rem auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 4px;
+  outline: 0;
+  cursor: pointer;
+  border: 3px solid #161e35;
+}
+
+.col-1 form input[type="submit"]:hover {
+  background-color: #3071e7;
+  border: 3px solid #3071e7;
+}
+
+.col-1 p {
+  text-align: center;
+  font-weight: 600;
+}
+
+.col-1 .p-1 {
+  color: #161e35;
+}
+
+.col-1 .p-2 {
+  text-align: #080c25;
+}
+
+.col-1 .p-2 a {
+  text-decoration: none;
+  color: #3071e7;
+  font-weight: 600;
+}
+
+.col-1 .p-2 a:hover {
+  color: #080c25;
+}
+
+.col-2 {
+  background-color: #161e35;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.col-2 h1 {
+  font-size: larger;
+  font-weight: 600;
+  color: #ffffff;
+  text-align: center;
+}
+
+.col-2 form {
+  margin-top: 2rem;
+}
+
+.col-2 form label {
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.col-2 form input[type="email"] {
+  width: 100%;
+  padding: 12px 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 3px solid #080c25;
+  border-radius: 4px;
+  outline: 0;
+  margin: 0.5rem auto;
+}
+
+.col-2 form input[type="text"]:focus {
+  border: 3px solid #a6b2ec;
+}
+
+.col-2 form input[type="submit"] {
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+  background-color: #161e35;
+  color: #ffffff;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 1rem auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 4px;
+  outline: 0;
+  cursor: pointer;
+  border: 3px solid #3071e7;
+}
+
+.col-2 form input[type="submit"]:hover {
+  background-color: #3071e7;
+  border: 3px solid #3071e7;
+}
+
+.col-2 p {
+  text-align: center;
+  font-weight: 600;
+}
+
+.col-2 .p-1 {
+  color: #161e35;
+}
+
+.col-2 .p-2 {
+  text-align: #080c25;
+}
+
+.col-2 .p-2 a {
+  text-decoration: none;
+  color: #080c25;
+  font-weight: 600;
+}
+
+.col-2 .p-2 a:hover {
+  color: #3071e7;
+}
+
+@media (min-width: 800px) {
+  .columns {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    padding: 0;
+    height: 600px;
+    width: 100%;
+  }
+  .col {
+    max-width: 50%;
+  }
+  .wrapper {
+    position: relative;
+    top: 100px;
+    bottom: 0;
+    width: 40%;
+    margin: auto;
+  }
+  .col-1 h1 {
+    font-size: x-large;
+    font-weight: 600;
+    color: #080c25;
+    text-align: center;
+  }
+  .col-1 form input[type="text"],
+  .col-1 form input[type="password"] {
+    width: 100%;
+    padding: 12px 20px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    border: 3px solid #080c25;
+    border-radius: 4px;
+    outline: 0;
+    margin: 1rem auto;
+  }
+  .col-1 form input[type="text"]:focus {
+    border: 3px solid #a6b2ec;
+  }
+  .col-1 form input[type="submit"] {
+    -webkit-transition-duration: 0.4s;
+            transition-duration: 0.4s;
+    background-color: #161e35;
+    color: #ffffff;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 1rem auto;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    border-radius: 4px;
+    outline: 0;
+    cursor: pointer;
+    font-size: medium;
+    border: 2px solid #161e35;
+  }
+  .col-1 form input[type="submit"]:hover {
+    background-color: #3071e7;
+    border: 3px solid #3071e7;
+  }
+  .col-2 {
+    background-color: #161e35;
+    padding: 0;
+  }
+  .col-2 h1 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #ffffff;
+    text-align: center;
+    margin: 3.2rem auto;
+  }
+  .col-2 form label {
+    font-weight: 400;
+    color: #ffffff;
+  }
+  .col-2 form input[type="submit"] {
+    -webkit-transition-duration: 0.4s;
+            transition-duration: 0.4s;
+    background-color: #161e35;
+    color: #ffffff;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 1rem auto;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    border-radius: 4px;
+    outline: 0;
+    cursor: pointer;
+    font-size: medium;
+    border: 3px solid #3071e7;
+  }
+}
+/*# sourceMappingURL=style.css.map */
